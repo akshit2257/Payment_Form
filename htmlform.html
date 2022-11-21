@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="htmlform.css">
+    <title>payment form</title>
+</head>
+<body>
+    <div class="container">
+    <div class="ramram">
+    <header>
+    <h1 class="formm">Payment form<img class="circle" src="/img.png" alt="payment" height="40"/>
+    <hr>
+    </header>
+    </div>
+    <main>
+    <form action="">
+    <h3>user information</h3>
+    <p>Enter name: *<input type="text" placeholder="Enter Name"  required></p>
+    
+    <fieldset>
+        <legend>Gender</legend> 
+            <label for="001"><input type="radio" value="male" name="male" id="001">male</label>
+            <label for="002"><input type="radio" value="male" name="male" id="002">female</label>
+    </fieldset>
+    
+    <p>
+        
+        <legend>Address:-</legend>
+        <textarea placeholder="enter your address here" name="address" id="003" minlength="6" maxlength="100" style="width: 200;"></textarea>
+    
+    </p>
+    
+    <p>
+        Email:-
+        <label for="004"><input type="email" name=email id="004" placeholder="email id"</label>
+    </p>
+    <p>
+        pincode:-
+        <label for="008"><input type="number" name=number id="008" placeholder="123456" required minlength="6" maxlength="6" size="10"></label>
+    </p>
+    <hr>
+    <h3>payment method</h3>
+    <P>
+        
+        card type:
+        <select value="card type" id="006" aria-placeholder="card type">
+            <option value="">>>enter the card type<<</option> 
+            <option value="VISA">VISA</option> 
+            <option value="MASTER CARD">MASTER CARD</option> 
+            <option value="RUPAY">RUPAY</option> 
+        </select>
+    </P>
+    <p>
+        card number:-
+        <label for="005"><input type="number" placeholder="1111-2222-3333-4444" id="005" minlength="12" maxength="16" ></label>
+    </p>
+    <p>
+        account type:-
+        <select value="type" id="006">
+            <option value="saving account">account type</option>
+            <option value="saving acccount">saving acccount</option>
+            <option value="current account">current account</option>
+            <option value="salary account">salary account</option>
+        </select>
+    </p>
+    <p>
+        CVV:-
+        <label for="007"><input type="number" id="007"  maxlength="3"></label>
+    </p>
+    </main>
+    </br>
+    <footer>
+    <label for="008"><input type="submit" id="008" placeholder="pay now"></label>
+    <hr>
+    </footer>
+    </form>
+</div>
+
+</body>
+</html>
